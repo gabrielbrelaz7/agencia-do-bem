@@ -1,0 +1,80 @@
+{
+  "alunos": [
+    {
+      "id": 1,
+      "nome" : "Gabriel Araujo",
+      "turma": "1001",
+      "chamada" : ""
+    },
+    {
+      "id": 2,
+      "nome" : "Eduardo Santos",
+      "turma": "1001",
+      "chamada" : ""
+    },
+    {
+      "id": 3,
+      "nome" : "João Silva",
+      "turma": "1001",
+      "chamada" : ""
+    },
+    {
+      "id": 4,
+      "nome" : "Marcelo Gomes",
+      "turma": "1001",
+      "chamada" : ""
+    },
+    {
+      "id": 5,
+      "nome" : "Rodrigo Marques",
+      "turma": "1001",
+      "chamada" : ""
+    },
+    {
+      "id": 6,
+      "nome" : "Gabriel Júnior",
+      "turma": "1001",
+      "chamada" : ""
+    }
+  ],
+
+
+  "turmas": [
+    {
+      "id": 1,
+      "turma": "1001",
+      "status": "ativo"
+    },
+    {
+      "id": 2,
+      "turma": "2002",
+      "status": "ativo"
+
+    },
+    {
+      "id": 3,
+      "turma": "3001",
+      "status": "ativo"
+
+    },
+    {
+      "id": 4,
+      "turma": "4001",
+      "status": "ativo"
+
+    },
+    {
+      "id": 5,
+      "turma": "5001",
+      "status": "ativo"
+
+    },
+    {
+      "id": 6,
+      "turma": "6002",
+      "status": "ativo"
+
+    }
+  ]
+
+}

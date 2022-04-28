@@ -1,0 +1,76 @@
+
+<div *ngIf="isClasses">
+
+    <div class="table">
+        <div class="row">
+            <div class="col col-xl-12 col-lg-12">
+                <div class="card mb-3">
+                    <div class="card-header">
+                        Turmas
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <!-- <th></th> -->
+                                    <th>Turmas</th>
+                                    <th>
+                                        
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let class of classes">
+                                    <td>{{class.turma}}</td>
+                                    <td>
+                                        <!-- <button (click)="getDetailsByClass(class.turma)">Dados Gerais</button> -->
+                                        <button (click)="getStudentsByClass(class.turma)">Alunos</button>
+                                        <!-- <button (click)="getCalledByClass(class.turma)">Fazer chamada</button> -->
+                                    </td>
+                                    
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+    
+    </div>
+    
+    
+    <div *ngIf="isStudents">
+        <div class="table">
+            <div class="row">
+                <div class="col col-xl-12 col-lg-12">
+                    <div class="card mb-3">
+                        <div class="card-header">
+                            <button (click)="backPage()">Voltar</button>
+                        </div>
+                        <div class="card-body">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <!-- <th></th> -->
+                                        <th>Aluno</th>
+                                        <th>
+                                            Turma
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let student of students">
+                                        <td>{{student.nome}}</td>
+                                        <td>
+                                            {{student.turma}}
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </div>
+    </div>

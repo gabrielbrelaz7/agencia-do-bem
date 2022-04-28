@@ -1,0 +1,117 @@
+<div class="d-flex">
+
+<div class="filter">
+    <label for="">
+        Status
+    </label>
+    <select (change)="filterStatus($event)">
+        <option value="ativo">Ativo</option>
+        <option value="inativo">Inativo</option>
+    </select>
+    </div>
+
+    <div class="filter">
+    <label for="">
+        Status
+    </label>
+    <select (change)="filterStatus($event)">
+        <option value="Ativo">Ativo</option>
+        <option value="Inativo">Inativo</option>
+    </select>
+    </div>
+</div>
+
+
+
+<div *ngIf="isClasses">
+
+    <div class="table">
+        <div class="row">
+            <div class="col col-xl-12 col-lg-12">
+                <div class="card mb-3">
+                    <div class="card-header">
+                        Turmas
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Código
+                                    </th>
+                                    <th>
+                                        Pólo
+                                    </th>
+                                    <th>
+                                        Professor
+                                    </th>
+                                    <th>
+                                        Tipo
+                                    </th>
+                                    <th>
+                                        Dias da Semana
+                                    </th>
+                                    <th>
+                                        Horário
+                                    </th>
+                                    <th>
+                                        Status
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let class of classes">
+                                    <td>{{class.turma}}</td>
+                                    <td>{{class.turma}}</td>
+                                    <td>{{class.turma}}</td>
+                                    <td>{{class.turma}}</td>
+                                    <td>{{class.turma}}</td>
+                                    <td>{{class.turma}}</td>
+                                    <td>{{class.turma}}</td>
+                                    
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+    
+    </div>
+    
+    
+    <div *ngIf="isStudents">
+        <div class="table">
+            <div class="row">
+                <div class="col col-xl-12 col-lg-12">
+                    <div class="card mb-3">
+                        <div class="card-header">
+                            <button (click)="backPage()">Voltar</button>
+                        </div>
+                        <div class="card-body">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <!-- <th></th> -->
+                                        <th>Aluno</th>
+                                        <th>
+                                            Turma
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let student of students">
+                                        <td>{{student.nome}}</td>
+                                        <td>
+                                            {{student.turma}}
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </div>
+    </div>

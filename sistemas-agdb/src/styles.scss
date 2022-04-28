@@ -1,0 +1,167 @@
+
+
+  @import './assets/bootstrap/bootstrap.scss';
+
+// DESIGN COLORS
+
+$default1: #008bd0;
+$default2: #97b214;
+$default3: #003951;
+$default4: #0073a2;
+$default5: #bae5f9;
+$white: #ffff;
+$button1 : #f1d600;
+$button2: #fbb03b;
+$popUp : #212222;
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+
+.header {
+    position: relative;
+    background-color: $default3;
+    // padding-top: 4rem;
+
+    polygon.fill-default {
+        fill: $default2;
+    }
+}
+
+.login {
+    button {
+        background-color: $default3;
+        width: 50%;
+        color: $white;
+        font-weight: bold;
+    }
+    h2 {
+        color: $default3;
+    }
+}
+
+.card {
+    background-color: $white;
+}
+
+
+body {
+    background-color: $default5;
+}
+
+
+// Dashboard Page
+
+body {
+    overflow-x: hidden;
+  }
+
+
+  #header {
+    padding: 15px;
+    -ms-overflow-x: hidden;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: relative;
+    overflow: hidden;
+    background-color: $default3;
+  
+  }
+  
+  .collapsed {
+    margin-left: 60px;
+  }
+  
+  @media screen and (max-width: 992px) {
+    #header {
+        margin-left: 0px !important;
+    }
+  }
+  
+  @media print {
+    #header {
+        margin-top: 0px !important;
+        margin-left: 0px !important;
+    }
+  }
+  
+  .navbar-expand-lg .navbar-collapse {
+    justify-content: end;
+  }
+
+
+  #sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -15rem;
+    -webkit-transition: margin .25s ease-out;
+    -moz-transition: margin .25s ease-out;
+    -o-transition: margin .25s ease-out;
+    transition: margin .25s ease-out;
+    background-color: $default3;
+
+    .list-group-item {
+        background-color: $default3;
+        color: $white;
+        font-size: 1.2rem;
+        
+        span {
+          padding-left: 10px;
+          vertical-align: super;
+        }
+    }
+
+  }
+
+  .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 2rem;
+    color: $white;
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  #sidebar-wrapper .list-group {
+    width: 15rem;
+  }
+
+
+  #sidebar.toggled #sidebar-wrapper {
+    margin-left: 0;
+  }
+  
+  @media (min-width: 768px) {
+    #sidebar-wrapper {
+      margin-left: 0;
+    }
+  
+    #page-content-wrapper {
+      min-width: 0;
+      width: 100%;
+    }
+  
+    #sidebar.toggled #sidebar-wrapper {
+      margin-left: -15rem;
+    }
+  }
+
+  #sidebar {
+    position: fixed;
+    z-index: 1;
+}
+  
+
+@media (min-width: 768px)
+{
+    nav .btn {
+        display: none;
+    }
+
+}
+
+.navbar-toggler-icon {
+  background-color: $button2;
+}
+  
+
+
